@@ -249,7 +249,6 @@ body {
 
 .hero-content {
     text-align: center;
-    text-shadow: 1 20px 50px rgba(0,0,0,0.5);
     width: 100%;
 }
 
@@ -309,7 +308,7 @@ table {
 
 th, td {
     padding: 1rem;
-    text-align: left;
+    text-align: center; /* 將文字置中 */
 }
 
 th {

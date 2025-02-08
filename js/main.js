@@ -50,7 +50,7 @@ const images1 = [
     'images/banner12.png',
     'images/banner13.png',
     'images/banner14.png',
-    'images/banner15.jpg'
+    'images/banner15.png'
 ];
 
 let currentImageIndex = 0;
