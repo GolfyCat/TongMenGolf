@@ -87,11 +87,63 @@ body {
     }
 }
 
+
+/* 漢堡菜單 */
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo-img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar .logo-text {
+    font-size: 1.5rem;
+    color: #092b02;
+}
+
+/* 首頁 Banner */
+.hero {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+}
+
+.hero .slides {
+    display: flex;
+    height: 100%;
+    width: 400%;
+    animation: slide 50s linear infinite;
+}
+
+.hero .slide {
+    flex: 0 0 25%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
 /* Banner 設計 */
 .hero {
-    height: 300px;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-                url('images/golf-bg.jpg') center/cover;
+    height: 400px;
     color: white;
     display: flex;
     align-items: center;
