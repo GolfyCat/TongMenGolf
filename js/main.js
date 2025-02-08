@@ -55,11 +55,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const images = [
-    'images/banner1.jpg',
-    'images/banner2.jpg',
-    'images/banner3.jpg',
-    'images/banner4.jpg',
-    'images/banner5.jpg'
+    'images/banner11.png',
+    'images/banner12.png',
+    'images/banner13.png',
+    'images/banner14.png',
+    'images/banner15.jpg'
 ];
 
 let currentImageIndex = 0;
