@@ -19,21 +19,12 @@ document.addEventListener('DOMContentLoaded', () => {
         'images/banner10.jpg'
     ];
 
-    const slidesContainer = document.querySelector('.slides');
+    const imageMarqueeContent = document.querySelector('.image-marquee-content');
 
     images.forEach((image) => {
-        const slide = document.createElement('div');
-        slide.classList.add('slide');
-        slide.style.backgroundImage = `url(${image})`;
-        slidesContainer.appendChild(slide);
-    });
-
-    // 複製一份圖片以實現循環播放
-    images.forEach((image) => {
-        const slide = document.createElement('div');
-        slide.classList.add('slide');
-        slide.style.backgroundImage = `url(${image})`;
-        slidesContainer.appendChild(slide);
+        const img = document.createElement('img');
+        img.src = image;
+        imageMarqueeContent.appendChild(img);
     });
 
     const lazyImages = document.querySelectorAll('img[data-src]');
@@ -54,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     lazyImages.forEach(lazyLoad);
 });
 
-const images = [
+const images1 = [
     'images/banner11.png',
     'images/banner12.png',
     'images/banner13.png',
@@ -66,8 +57,8 @@ let currentImageIndex = 0;
 const hero = document.querySelector('.hero');
 
 function changeBackgroundImage() {
-    hero.style.backgroundImage = `url(${images[currentImageIndex]})`;
-    currentImageIndex = (currentImageIndex + 1) % images.length;
+    hero.style.backgroundImage = `url(${images1[currentImageIndex]})`;
+    currentImageIndex = (currentImageIndex + 1) % images1.length;
 }
 
 setInterval(changeBackgroundImage, 5000);

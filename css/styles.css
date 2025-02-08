@@ -22,24 +22,25 @@ body {
 
 /* 導航欄 */
 .navbar {
-    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #092b02;
+    padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .logo {
+    display: flex;
+    align-items: center;
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--primary-color);
     text-decoration: none;
-    display: flex;
-    align-items: center;
 }
 
 .nav-links {
@@ -93,6 +94,14 @@ body {
 }
 
 /* 漢堡菜單 */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #092b02;
+    padding: 10px 20px;
+}
+
 .navbar .logo {
     display: flex;
     align-items: center;
@@ -105,7 +114,7 @@ body {
 
 .navbar .logo-text {
     font-size: 1.5rem;
-    color: #092b02;
+    color: #fff;
 }
 
 .navbar .nav-links {
@@ -119,12 +128,16 @@ body {
 
 .navbar .nav-links a {
     text-decoration: none;
-    color: #092b02;
+    color: #fff;
     font-size: 1rem;
 }
 
 .navbar .hamburger {
     display: none;
+    color: #fff;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
 }
 
 @media (max-width: 768px) {
@@ -132,6 +145,7 @@ body {
         display: none;
         flex-direction: column;
         width: 100%;
+        background-color: #092b02; /* 確保背景顏色一致 */
     }
 
     .navbar .nav-links.active {
@@ -143,10 +157,55 @@ body {
     }
 }
 
+/* 圖片跑馬燈 */
+.image-marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #f8f8f8;
+    padding: 10px 0;
+}
+
+.image-marquee-content {
+    display: inline-block;
+    animation: image-marquee 30s linear infinite;
+}
+
+.image-marquee-content img {
+    height: 100px;
+    margin: 0 10px;
+}
+
+@keyframes image-marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* 跑馬燈 */
+.marquee {
+    background-color: #092b02;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee p {
+    display: inline-block;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
 /* 首頁 Banner */
 .hero {
     position: relative;
-    height: 400px;
+    height: 280px; /* 原高度的70% */
     overflow: hidden;
 }
 
@@ -182,7 +241,6 @@ body {
 
 /* Banner 設計 */
 .hero {
-    height: 400px;
     color: white;
     display: flex;
     align-items: center;
@@ -191,6 +249,7 @@ body {
 
 .hero-content {
     text-align: center;
+    text-shadow: 1 20px 50px rgba(0,0,0,0.5);
     width: 100%;
 }
 
@@ -356,4 +415,43 @@ social-links a:hover {
 
 .results-table tr:nth-child(even) {
     background: #f8f8f8;
+}
+
+/* 關於同門隊 */
+.about {
+    padding: 2rem 0;
+    background-color: #f8f8f8;
+}
+
+.about .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.about h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #092b02;
+}
+
+.about h2 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    color: #092b02;
+}
+
+.about p, .about ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.about ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
 }
