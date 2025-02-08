@@ -28,6 +28,9 @@ body {
     width: 100%;
     top: 0;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
@@ -35,6 +38,8 @@ body {
     font-weight: bold;
     color: var(--primary-color);
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 .nav-links {
@@ -87,7 +92,6 @@ body {
     }
 }
 
-
 /* 漢堡菜單 */
 .navbar .logo {
     display: flex;
@@ -102,6 +106,35 @@ body {
 .navbar .logo-text {
     font-size: 1.5rem;
     color: #092b02;
+}
+
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #092b02;
+    font-size: 1rem;
+}
+
+.navbar .hamburger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+    }
+
+    .navbar .hamburger {
+        display: block;
+    }
 }
 
 /* 首頁 Banner */
@@ -292,4 +325,29 @@ footer {
 
 .social-links a:hover {
     opacity: 0.8;
+}
+
+/* 成績表格設計 */
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.results-table th, .results-table td {
+    padding: 1rem;
+    text-align: left;
+}
+
+.results-table th {
+    background: var(--primary-color);
+    color: white;
+}
+
+.results-table tr:nth-child(even) {
+    background: #f8f8f8;
 }
