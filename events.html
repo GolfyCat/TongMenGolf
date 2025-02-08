@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>同門隊 - 活動成績</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>同門隊</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">首頁</a></li>
-                <li><a href="events.html">活動成績</a></li>
-                <li><a href="members.html">會員介紹</a></li>
-                <li><a href="contact.html">聯絡我們</a></li>
+    <!-- 漢堡菜單 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="images/LOGO.png" alt="同門隊 Logo" style="height: 40px;">
+                <span style="font-size: 1.5rem; color: #092b02; margin-left: 10px;">同門隊 27屆</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html"><i class="fas fa-home"></i> 首頁</a></li>
+                <li><a href="events.html"><i class="fas fa-trophy"></i> 活動成績</a></li>
+                <li><a href="monthly-results.html"><i class="fas fa-chart-line"></i> 每月成績</a></li>
+                <li><a href="members.html"><i class="fas fa-users"></i> 會員介紹</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> 聯絡我們</a></li>
             </ul>
-        </nav>
-    </header>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
 
     <main>
         <section>
@@ -47,7 +56,15 @@
     </main>
 
     <footer>
-        <p>&copy; 2023 同門隊</p>
+        <div class="container">
+            <p>&copy; 2025 27屆同門隊</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/groups/611671188391981"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-line"></i></a>
+            </div>
+        </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
