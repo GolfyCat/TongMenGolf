@@ -130,6 +130,12 @@ body {
 @media (max-width: 768px) {
     .navbar .nav-links {
         display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar .nav-links.active {
+        display: flex;
     }
 
     .navbar .hamburger {
@@ -323,7 +329,7 @@ footer {
     transition: opacity 0.3s;
 }
 
-.social-links a:hover {
+social-links a:hover {
     opacity: 0.8;
 }
 
