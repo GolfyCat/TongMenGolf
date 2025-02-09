@@ -16,7 +16,7 @@
                 <span class="logo-text">同門隊 27屆</span>
             </a>
             <ul class="nav-links" id="navLinks">
-                <li><a href="index.html"><i class="fas fa-home"></i> 首頁</a></li>
+                <li><a href="main.html"><i class="fas fa-home"></i> 首頁</a></li>
                 <li><a href="score.html"><i class="fas fa-trophy"></i> 例賽成績</a></li>
                 <li><a href="event.html"><i class="fas fa-chart-line"></i> 活動公告</a></li>
                 <li><a href="about.html"><i class="fas fa-users"></i> 關於同門隊</a></li>
@@ -26,6 +26,30 @@
             </button>
         </div>
     </nav>
+
+    <!-- 會員登入 -->
+    <section class="login">
+        <div class="container">
+            <form action="login.html" method="post">
+                <div class="login-logo">
+                    <img src="images/LOGO.png" alt="同門隊 Logo">
+                </div>
+                <div class="form-group">
+                    <label for="username">帳號：</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">密碼：</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">記住密碼</label>
+                </div>
+                <button type="submit">登入</button>
+            </form>
+        </div>
+    </section>
 
     <!-- 首頁 Banner -->
     <header class="hero">
@@ -54,10 +78,7 @@
         <div class="container">
             <h2><i class="fas fa-bullhorn"></i> 最新公告</h2>
             <div class="card">
-                <a href="https://www.facebook.com/events/963276272022663/?acontext=%7B%22event_action_history%22%3A[%7B%22extra_data%22%3A%22%22%2C%22mechanism%22%3A%22unknown%22%2C%22surface%22%3A%22group%22%7D%2C%7B%22extra_data%22%3A%22%22%2C%22mechanism%22%3A%22surface%22%2C%22surface%22%3A%22permalink%22%7D%2C%7B%22extra_data%22%3A%22%22%2C%22mechanism%22%3A%22surface%22%2C%22surface%22%3A%22edit_dialog%22%7D]%2C%22ref_notif_type%22%3Anull%7D">
-        
-                <p>2025年2月賽事報名已開放！請點擊後進入同問隊FB去登記</p>
-                </a>
+                <p>2025年2月賽事報名已開放！</p>
             </div>
         </div>
     </section>

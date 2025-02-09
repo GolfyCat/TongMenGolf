@@ -161,13 +161,13 @@ body {
 .image-marquee {
     overflow: hidden;
     white-space: nowrap;
-    background-color: #f8f8f8;
+    background-color: #f8f8f809;
     padding: 10px 0;
 }
 
 .image-marquee-content {
     display: inline-block;
-    animation: image-marquee 30s linear infinite;
+    animation: image-marquee 50s linear infinite;
 }
 
 .image-marquee-content img {
@@ -223,7 +223,7 @@ body {
     display: flex;
     height: 100%;
     width: 400%;
-    animation: slide 50s linear infinite;
+    animation: slide 20s linear infinite;
 }
 
 .hero .slide {
